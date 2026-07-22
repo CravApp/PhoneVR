@@ -165,7 +165,7 @@ dependencies {
     androidTestImplementation "androidx.test:rules:$androidXTestVersion"
     androidTestUtil "androidx.test.services:test-services:$servicesVersion"
 
-    implementation 'io.github.zxing-cpp:android:2.3.0-SNAPSHOT'
+    implementation 'io.github.zxing-cpp:android:2.3.0'
     implementation 'com.google.protobuf:protobuf-javalite:3.19.4'
     implementation 'androidx.camera:camera-core:1.3.4'
     implementation 'androidx.camera:camera-view:1.3.4'
