@@ -66,6 +66,9 @@ jobs:
           chmod +x prepare-alvr-deps.sh
           bash prepare-alvr-deps.sh nogvr
         
+      - name: Pin cargo-ndk to v3 for legacy -p flag support
+        run: cargo install cargo-ndk --version "^3.0.0"
+
       - name: Change gradle wrapper permissions
         run: |
           cd code/mobile/android/PhoneVR
