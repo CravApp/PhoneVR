@@ -30,15 +30,9 @@ target_include_directories(native-lib-alvr
 
     # ALVR Headers
     PUBLIC ${alvr_build_dir}
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../cardboard
 )
 
 target_link_libraries(native-lib-alvr
     log android EGL GLESv3 mediandk
     ${alvr_build_dir}/${ANDROID_ABI}/libalvr_client_core.so
-    ${libs_dir}/jni/${ANDROID_ABI}/libGfxPluginCardboard.so
 )
-
-IF(${HAVEGVR})
-add_subdirectory(src/gvr)
-ENDIF()
